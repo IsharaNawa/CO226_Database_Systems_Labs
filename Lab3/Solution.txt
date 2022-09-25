@@ -1,0 +1,27 @@
+CREATE DATABASE E17219Lab03;
+
+USE E17219Lab03;
+
+CREATE TABLE CUST_ORDER(
+	OrderNum INT PRIMARY KEY,
+	TSize VARCHAR(6) NOT NULL,
+	TColour VARCHAR(6) NOT NULL,
+	GCap BOOLEAN NOT NULL,
+	Wband BOOLEAN NOT NULL,
+	Fname VARCHAR(20) NOT NULL,
+	Lname VARCHAR(20) NOT NULL,
+	Address1 VARCHAR(20) NOT NULL,
+	Address2 VARCHAR(20) NOT NULL,
+	Address3 VARCHAR(20) NOT NULL,
+	Comments_txt VARCHAR(100));
+	
+INSERT INTO CUST_ORDER VALUES (1, 'Large', 'Red', TRUE, FALSE, 'Pathum', 'Shehara', '199', 'Str1', 'Matale', 'Pleasure doing buissness with you');
+
+INSERT INTO CUST_ORDER VALUES
+	(1, 'Large', 'Red', TRUE, FALSE, 'Pathum', 'Shehara', '199', 'Str1', 'Matle', 'Pleasure doing buissness with you'),
+	(2, 'Medium', 'Purple', TRUE, TRUE, 'Kavindu', 'Lakshitha', '15', 'Kavudupalalle', 'Seegiriya', 'Send this ASAP'),
+	(3, 'Large', 'Blue', FALSE, TRUE, 'Ravindu', 'D.Harshana', '23', 'Dankanda', 'Raththota', 'Thank you.');
+	
+UPDATE CUST_ORDER SET GCap = TRUE WHERE TSize = 'Large';
+
+DELETE FROM CUST_ORDER WHERE TColour = 'Purple';
