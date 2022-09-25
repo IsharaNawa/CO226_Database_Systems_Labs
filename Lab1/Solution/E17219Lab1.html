@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<style>
+
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+</style>
+
+<html>
+	<head>
+		<title>Buy T-shirts Online</title>
+   </head>
+  
+	<body bgcolor="#f1f1f1"  leftmargin="30">
+		<h2>Buy T-shirts Online</h2>
+		<b>Fill out the form below and click "Order Now" to order</b><br><br>
+		<form>
+			<table>
+				<tr>
+					<th>Search by order number:</th>
+					<td>
+						<input type="text" name="Search">
+						<input type="submit" value="Search" class="registerbtn">
+					</td>
+				</tr>
+   
+				<tr>
+					<th>Choose your size:</th>
+					<td>
+						<input type="radio" name="size" value="small"><label for="small">Small</label>
+						<input type="radio" name="size" value="medium"><label for="medium">Medium</label>
+						<input type="radio" name="size" value="large"><label for="large">Large</label>
+					</td>
+				</tr>
+   
+				<tr>
+					<th>Choose your colour:</th>
+					<td>
+						<select name="selectColor">
+							<option value="red">Red</option>
+							<option value="purple">Purple</option>
+							<option value="blue">Blue</option>
+							<option value="green">Green</option>
+					</td>
+				</tr>
+   
+				<tr>
+					<th>Extra Items:</th>
+					<td>
+						<input type="checkbox" name="GearCap" value="cap">Cap<br>
+						<input type="checkbox" name="GearBand" value="band">Wrist Band
+					</td>
+				</tr>
+   
+				<tr>
+					<th>Deliver to:</th>
+					<td>
+						<table>
+							<tr>
+								<th>First Name:</th>
+								<td><input type="text" name="firstname"></td>
+							</tr>
+							
+							<tr>
+								<th>Last Name:</th>
+								<td><input type="text" name="lastname"></td>
+							</tr>
+        
+							<tr>
+								<th>Address1:</th>
+								<td><input type="text" name="address1"></td>
+							</tr>
+        
+							<tr>
+								<th>Address2:</th>
+								<td><input type="text" name="address2"></td>
+							</tr>
+        
+        
+							<tr>
+								<th>Address3:</th>
+								<td><input type="text" name="address3"></td>
+							</tr>
+        
+        
+						</table>       
+					</td>
+				</tr>
+   
+				<tr>
+					<th>Your Comments:</th>
+					<td>
+						<textarea rows="10" cols="60" name="comment" form="usrform"></textarea>
+						<br><input type="submit" value="Order Now" class="registerbtn">       
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
